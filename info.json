@@ -1,0 +1,50 @@
+{
+    "keyboard_name": "Macropad RP2040",
+    "manufacturer": "Adafruit",
+    "url": "https://learn.adafruit.com/adafruit-macropad-rp2040",
+    "maintainer": "Jpe230",
+    "usb": {
+        "vid": "0x239A",
+        "pid": "0x0108",
+        "device_version": "0.0.1"
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP20", "pin_b": "GP19"}
+        ]
+    },
+    "rgb_matrix": {
+        "driver": "WS2811"
+    },
+    "ws2812": {
+        "pin": "GP28",
+        "driver": "vendor"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "direct": [
+            ["GP2", "GP5", "GP8", "GP11"],
+            ["GP3", "GP6", "GP9", "GP12"],
+            ["GP4", "GP7", "GP10", "GP13"]
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"x": 0, "y": 0, "matrix": [0, 0]},
+                {"x": 0, "y": 1, "matrix": [0, 1]},
+                {"x": 0, "y": 2, "matrix": [0, 2]},
+                {"x": 0, "y": 3, "matrix": [0, 3]},
+                {"x": 1, "y": 0, "matrix": [1, 0]},
+                {"x": 1, "y": 1, "matrix": [1, 1]},
+                {"x": 1, "y": 2, "matrix": [1, 2]},
+                {"x": 1, "y": 3, "matrix": [1, 3]},
+                {"x": 2, "y": 0, "matrix": [2, 0]},
+                {"x": 2, "y": 1, "matrix": [2, 1]},
+                {"x": 2, "y": 2, "matrix": [2, 2]},
+                {"x": 2, "y": 3, "matrix": [2, 3]}
+            ]
+        }
+    }
+}
